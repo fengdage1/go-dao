@@ -1,2 +1,2 @@
 # sql-sentence-maker
-a golang plugin
+golang sql sentence maker

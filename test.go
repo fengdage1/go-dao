@@ -2,6 +2,7 @@ package main
 import (
 	"fmt"
 	"./dao"
+	"./sqltool"
 )
 type User struct {
 	     id   int
@@ -9,6 +10,8 @@ type User struct {
 	     age  int
 	 }
 func main(){
+	co,err:= sqltool.CreateConnPool("127.0.0.1","root","333221","book","3306","utf-8")
+	_=co
 	var t struct{name string;user string}
 	t.name="1"
 	t.user="l"
